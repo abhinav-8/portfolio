@@ -1,9 +1,9 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
-  SiLinux,
+  SiAndroidstudio,
   SiVisualstudiocode,
-  SiJupyter,
+  SiAdobexd,
   SiPostman,
   SiHeroku,
 } from "react-icons/si";
@@ -12,13 +12,13 @@ function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
+        <SiAndroidstudio />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiJupyter />
+        <SiAdobexd />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostman />
