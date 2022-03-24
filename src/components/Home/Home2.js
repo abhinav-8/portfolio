@@ -91,7 +91,7 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
-                >
+                > 
                   <FaLinkedinIn />
                 </a>
               </li>
