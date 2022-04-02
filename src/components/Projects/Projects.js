@@ -26,9 +26,9 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="Cookerr"
+              description="cookerr is a native android application which will help us in cooking the various cuisine🍛.You can find different cuisine via category such as Chicken🐓,Beef🥩,Desert🍨etc.The app will show the best recipes available on the Internet and provide us with the ingredients and cooking instruction for the cuisine. In case of any confusion,the app has that feature where we can find the elaborative blog📖 or Online tutorial on youtube."
+              link="https://github.com/prodeveloper03/cookerr"
             />
           </Col>
 
