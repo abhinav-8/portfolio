@@ -59,8 +59,8 @@ function Projects() {
             <ProjectCard
               imgPath={moviedekho}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Movie-Dekho"
+              description="MovieDekho is an native android application which recomend latest released movie on the basis of IMDB rating⭐️"
               link="https://github.com/soumyajit4419/Bits-0f-C0de"
             />
           </Col>
@@ -69,8 +69,8 @@ function Projects() {
             <ProjectCard
               imgPath={scanx}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="ScanX"
+              description="ScanX is native android application which is a QR-Code-scanner . "
               link="https://github.com/soumyajit4419/AI_For_Social_Good"
             />
           </Col>
@@ -79,9 +79,8 @@ function Projects() {
             <ProjectCard
               imgPath={fluidslider}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              title="Fluid-Slider"
+              description="FluidSlider is a modern android library which provide the developers to add the sliding rating UI feature in a very easy implementation ."
               link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
             />
           </Col>
