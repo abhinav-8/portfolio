@@ -49,7 +49,7 @@ function Projects() {
             <ProjectCard
               imgPath={gonote}
               isBlog={false}
-              title="Editor.io"
+              title="Go-Note"
               description="GO-NOTE is a Native android application that will help you to take your notes and remember the important stuff. You can attach hyperlinks🔗 , photos🎞 etc to your application. To set your priority notes we can tag the notes with unique colours which will prioritize your notes as per your requirements."
               link="https://github.com/soumyajit4419/Editor.io"
             />
