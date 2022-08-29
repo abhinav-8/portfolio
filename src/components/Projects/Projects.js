@@ -41,7 +41,7 @@ function Projects() {
               Guardian Details: Here, you can add or delete the list of guardians with their respective name, relation, phone numbers and email id.
               Check Location: Here, you will get the current location of the user by adding a marker on the inbuilt google map.
               Emergency: This plays an important role in the app. It sends an instant text message and mail to the list of guardians. The message contains the current location of user with google map link created."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              link="https://github.com/prodeveloper03/Safer"
             />
           </Col>
 
@@ -51,7 +51,7 @@ function Projects() {
               isBlog={false}
               title="Go-Note"
               description="GO-NOTE is a Native android application that will help you to take your notes and remember the important stuff. You can attach hyperlinks🔗 , photos🎞 etc to your application. To set your priority notes we can tag the notes with unique colours which will prioritize your notes as per your requirements."
-              link="https://github.com/soumyajit4419/Editor.io"
+              link="https://github.com/prodeveloper03/Go-Note"
             />
           </Col>
 
@@ -61,7 +61,7 @@ function Projects() {
               isBlog={false}
               title="Movie-Dekho"
               description="MovieDekho is an native android application which recomend latest released movie on the basis of IMDB rating⭐️"
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
+              link="https://github.com/prodeveloper03/movie-dekho"
             />
           </Col>
 
@@ -71,7 +71,7 @@ function Projects() {
               isBlog={false}
               title="ScanX"
               description="ScanX is native android application which is a QR-Code-scanner . "
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
+              link="https://github.com/prodeveloper03/ScanX"
             />
           </Col>
 
@@ -81,7 +81,7 @@ function Projects() {
               isBlog={false}
               title="Fluid-Slider"
               description="FluidSlider is a modern android library which provide the developers to add the sliding rating UI feature in a very easy implementation ."
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              link="https://github.com/prodeveloper03/fluidToolSlider"
             />
           </Col>
         </Row>
