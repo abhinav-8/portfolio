@@ -1,21 +1,32 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { BiLinkExternal } from "react-icons/bi";
+import { AiFillGithub } from "react-icons/ai";
 
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
+          <Card.Title style={{fontWeight:"bolder", textAlign:"left"}}>{props.title}</Card.Title>
+          <li className="social-icons">
+                <a
+                  href={props.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+          </li>
+        </div>
+        <br/>
+
+        <Card.Text style={{textAlign:"left"}}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.link} target="_blank">
-          <BiLinkExternal /> &nbsp;
-          {props.isBlog ? "View Blog" : "View Project"}
-        </Button>
+        <Card.Text style={{ textAlign: "left" , color:"grey"}}>
+          {props.techStack}
+        </Card.Text>
       </Card.Body>
     </Card>
   );

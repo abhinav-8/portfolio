@@ -2,19 +2,14 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineUser,
 } from "react-icons/ai";
+import { PiReadCvLogo } from "react-icons/pi";
+import { RESUME_LINK } from "../config";
 
-import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -38,9 +33,6 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/">
-          <img src={logo} className="img-fluid logo" alt="brand" />
-        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -58,21 +50,10 @@ function NavBar() {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
+                to="/projects"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -81,16 +62,10 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>       
-
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/prodeveloper03/personal-portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
+            <Nav.Item>
+              <Nav.Link as={Link} to={RESUME_LINK} onClick={() => updateExpanded(false)}>
+                <PiReadCvLogo style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

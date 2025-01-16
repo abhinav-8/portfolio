@@ -3,12 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-import fluidslider from "../../Assets/Projects/fluidslider.png";
-import gonote from "../../Assets/Projects/gonote.png";
-import moviedekho from "../../Assets/Projects/moviedekho.png";
-import cookerr from "../../Assets/Projects/cookerr.png";
-import scanx from "../../Assets/Projects/scanx.png";
-import safer from "../../Assets/Projects/safer.jpeg";
 
 function Projects() {
   return (
@@ -16,74 +10,61 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Some Noteworthy Projects
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={cookerr}
+              techStack="Node.js | Express.js | RabbitMQ | MySQL | Sequelize"
               isBlog={false}
-              title="Cookerr"
-              description="cookerr is a native android application which will help us in cooking the various cuisine🍛.You can find different cuisine via category such as Chicken🐓,Beef🥩,Desert🍨etc.The app will show the best recipes available on the Internet and provide us with the ingredients and cooking instruction for the cuisine. In case of any confusion,the app has that feature where we can find the elaborative blog📖 or Online tutorial on youtube."
-              link="https://github.com/prodeveloper03/cookerr"
+              title="TravelAero"
+              description={<div>
+              • A microservices-based platform using HTTP for inter-service communication having secure
+authentication (JWT) and role-based access control, logging and error handling.
+<br/><br/>• Orchestrated microservices using API Gateway for streamlined requests. Wrote cron jobs for automated
+tasks and integrated message queues to send email notifications upon flight booking and reminders.</div>}
+              link="https://github.com/abhinav-8/TravelAero"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={safer}
+          <Col md={6} className="project-card">
+          <ProjectCard
+              techStack="Node.js | Socket.IO | Reactjs"
               isBlog={false}
-              title="Safer"
-              description="A sample Women Safety app 👩 built using Modern Android Development
-              Guardian Details: Here, you can add or delete the list of guardians with their respective name, relation, phone numbers and email id.
-              Check Location: Here, you will get the current location of the user by adding a marker on the inbuilt google map.
-              Emergency: This plays an important role in the app. It sends an instant text message and mail to the list of guardians. The message contains the current location of user with google map link created."
-              link="https://github.com/prodeveloper03/Safer"
+              title="ChatOn"
+              description={<div>
+              • A chat application where multiple users can join in a room and also has features of sharing emoticons and
+              scroll-to-last.
+<br/><br/>• A chat application where multiple users can join in a room and also has features of sharing emoticons and
+scroll-to-last.</div>}
+              link="https://github.com/abhinav-8/Chat-App"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={gonote}
+          <Col md={6} className="project-card">
+          <ProjectCard
+              techStack="Ethereum Blockchain(Polygon) | Solidity | Nextjs"
               isBlog={false}
-              title="Go-Note"
-              description="GO-NOTE is a Native android application that will help you to take your notes and remember the important stuff. You can attach hyperlinks🔗 , photos🎞 etc to your application. To set your priority notes we can tag the notes with unique colours which will prioritize your notes as per your requirements."
-              link="https://github.com/prodeveloper03/Go-Note"
+              title="NFT Marketplace"
+              description={<div>
+              An NFT marketplace built using NextJs and Solidity that enables the creation, sale, and purchase of digital art
+              as NFTs which is based on ERC721 smart contract and deployed to Matic Mumbai testnet.</div>}
+              link="https://github.com/abhinav-8/NFT-Marketplace"
             />
           </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={moviedekho}
+          
+          <Col md={6} className="project-card">
+          <ProjectCard
+              techStack="Ethereum Blockchain | Solidity | Reactjs"
               isBlog={false}
-              title="Movie-Dekho"
-              description="MovieDekho is an native android application which recomend latest released movie on the basis of IMDB rating⭐️"
-              link="https://github.com/prodeveloper03/movie-dekho"
+              title="Live-Coin"
+              description={<div>
+              A crowdfunding platform developed using React.js and solidity which minimizes frauds and high fees by
+              using Ethereum Blockchain.</div>}
+              link="https://github.com/abhinav-8/Live-Coin"
             />
           </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={scanx}
-              isBlog={false}
-              title="ScanX"
-              description="ScanX is native android application which is a QR-Code-scanner . "
-              link="https://github.com/prodeveloper03/ScanX"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={fluidslider}
-              isBlog={false}
-              title="Fluid-Slider"
-              description="FluidSlider is a modern android library which provide the developers to add the sliding rating UI feature in a very easy implementation ."
-              link="https://github.com/prodeveloper03/fluidToolSlider"
-            />
-          </Col>
+          
         </Row>
       </Container>
     </Container>
