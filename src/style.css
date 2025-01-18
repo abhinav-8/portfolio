@@ -389,6 +389,7 @@ html {
   display: inline-block !important;
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom:15px;
 }
 
 .icon-colour {
